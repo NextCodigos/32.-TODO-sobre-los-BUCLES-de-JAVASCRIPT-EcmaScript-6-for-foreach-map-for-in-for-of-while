@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucles</title><script type="text/javascript">
+      window.onload = inicio;
+      var dias = [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+        "Domingo",
+      ];
+      var autor = { nombre: "jab", edad: 18, color: "crimson" };
+      function inicio() {
+        dias.map(function(valor, indice) {
+          document.getElementById(
+            "caja"
+          ).innerHTML += `<div class="cajita">${valor} - ${indice}</div>`;
+        });
+      }
+    </script>
+    <style type="text/css">
+      #caja {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cajita {
+        width: 150px;
+        height: 150px;
+        font-size: 2em;
+        border: 1px solid black;
+        margin: 5px;
+        text-align: center;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="caja"></div>
+  </body>
+</html>
