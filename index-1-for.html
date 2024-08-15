@@ -9,11 +9,17 @@
         // var dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
         function inicio(){
-            for(let i=0; i<5; i++){
+            for(let i=0; i<15; i++){
                 document.getElementById("caja").innerHTML+=`<div class="cajita">${i}</div>`;
             }
             for (let i = 0; i < 5; i++) {
             document.getElementsByClassName("cajita")[i].style.backgroundColor="crimson"
+            }
+            for (let i = 5; i < 10; i++) {
+            document.getElementsByClassName("cajita")[i].style.backgroundColor="blue"
+            }
+            for (let i = 10; i < 15; i++) {
+            document.getElementsByClassName("cajita")[i].style.backgroundColor="green"
             }
         }
 
