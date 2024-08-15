@@ -7,10 +7,11 @@
     <title>Bucles</title>
     <script type="text/javascript">
         window.onload = inicio;
-        var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-        var autor={nombre:"jab",edad:18,color:"crimson"};
+        let dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+        let autor={nombre:"jab",edad:18,color:"crimson"};
         function inicio() {
             alert(autor.nombre);
+            alert(autor.edad);
             for (dato in autor) {
                 document.getElementById("caja").innerHTML += `<div class="cajita">${dato} - ${autor[dato]}</div>`;
 
